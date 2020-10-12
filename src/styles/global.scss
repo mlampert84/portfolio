@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "~bulma/bulma.sass";
+@import "~bulma-timeline/dist/css/bulma-timeline.sass";
+
+html {
+  background-color: lightcyan;
+  margin: 0px 10px;
+}
+
+.skills {
+  background-color: white;
+  min-height: 400px;
+  border-radius: 10px;
+  .skill {
+    // border: grey solid 1px;
+    @include mobile {
+      background-color: purple;
+      color: yellow;
+    }
+  }
+}
