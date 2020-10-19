@@ -35,9 +35,9 @@ const skills = skillsText.map(s => <Skill key={s.title} content={s} />)
 
 export default function Skills() {
   return (
-    <section className="section">
-      <div className="container box has-text-centered p-0">
-        <div className="columns skills">{skills}</div>
+    <section className="section" id="skills">
+      <div className="container">
+        <div className="columns">{skills}</div>
       </div>
     </section>
   )
