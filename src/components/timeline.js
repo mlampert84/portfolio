@@ -14,7 +14,7 @@ function renderTags(tags) {
   return (
     <div className="tags are-small">
       {tags.map(tag => (
-        <span className="tag" key={tag}>
+        <span className="tag is-success" key={tag}>
           {tag}
         </span>
       ))}

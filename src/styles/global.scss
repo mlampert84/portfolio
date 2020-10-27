@@ -1,18 +1,39 @@
 @charset "utf-8";
+
+$background-color: #f4f3e9;
+$text-color: #000209;
+$card-color: #98bcda;
+$orange: #c9562c;
+$yellow: #ca9448;
+
+$primary: $orange;
+$success: $card-color;
+$success-invert: $text-color;
+$timeline-line-color: $orange;
+$timeline-marker-color: $orange;
+
 @import "~bulma/bulma.sass";
 @import "~bulma-timeline/dist/css/bulma-timeline.sass";
 
 html {
-  background-color: lightcyan;
-  margin: 0px 10px;
+  background-color: $background-color;
+  // background-image: linear-gradient(to right, #e9a837, #f4f3e9);
+}
+
+body {
+  color: $text-color;
+  .title,
+  .subtitle {
+    color: $text-color;
+  }
 }
 
 .skills {
-  background-color: white;
   min-height: 400px;
   border-radius: 10px;
   .skill {
-    // border: grey solid 1px;
+    background-color: $card-color;
+    border: grey solid 1px;
     @include mobile {
       background-color: purple;
       color: yellow;
@@ -21,7 +42,9 @@ html {
 }
 
 .skill-card {
-  height: 500px;
+  height: 550px;
+  background-color: $card-color;
+  color: $text-color;
 }
 
 .red {
@@ -32,4 +55,14 @@ html {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+footer {
+  background-color: $yellow;
+  padding: 30px 0px 30px 0px;
+}
+
+.icon-size {
+  vertical-align: bottom;
+  margin: 0px 5px;
 }
