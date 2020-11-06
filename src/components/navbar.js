@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-scroll"
 
 const navItems = [
@@ -21,10 +21,35 @@ const navItems = [
 ]
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen)
+  }
+
   return (
     <div className="container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-menu">
+        <div className="navbar-brand">
+          <a
+            role="button"
+            className={`navbar-burger burger ${
+              mobileMenuOpen ? "is-active" : ""
+            }`}
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="theNavbar"
+            onClick={toggleMenu}
+          >
+            <span aria-hidden="true" onClick={toggleMenu}></span>
+            <span aria-hidden="true" onClick={toggleMenu}></span>
+            <span aria-hidden="true" onClick={toggleMenu}></span>
+          </a>
+        </div>
+        <div
+          id="theNavbar"
+          className={`navbar-menu ${mobileMenuOpen ? "is-active" : ""}`}
+        >
           <div className="navbar-end">
             {navItems.map(i => {
               return (
@@ -35,6 +60,9 @@ export default function Navbar() {
                   duration={500}
                   smooth={true}
                   key={i.name}
+                  onClick={() => {
+                    setMobileMenuOpen(false)
+                  }}
                 >
                   {i.displayName}
                 </Link>
