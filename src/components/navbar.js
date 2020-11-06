@@ -1,23 +1,45 @@
 import React from "react"
+import { Link } from "react-scroll"
+
+const navItems = [
+  {
+    name: "skills",
+    displayName: "Skills",
+  },
+  {
+    name: "experience",
+    displayName: "Experience",
+  },
+  {
+    name: "projects",
+    displayName: "Projects",
+  },
+  {
+    name: "contact",
+    displayName: "Contact",
+  },
+]
 
 export default function Navbar() {
   return (
     <div className="container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-menu">
           <div className="navbar-end">
-            <a className="navbar-item" href="#skills">
-              Skills
-            </a>
-            <a className="navbar-item" href="#experience">
-              Experience
-            </a>
-            <a className="navbar-item" href="#projects">
-              Projects
-            </a>
-            <a className="navbar-item" href="#contact">
-              Contact
-            </a>
+            {navItems.map(i => {
+              return (
+                <Link
+                  className="navbar-item"
+                  to={i.name}
+                  offset={-50}
+                  duration={500}
+                  smooth={true}
+                  key={i.name}
+                >
+                  {i.displayName}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </nav>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Element } from "react-scroll"
 
 import content from "../data/timeline-content"
 
@@ -59,14 +60,16 @@ function renderItems(items) {
 
 export default function Timeline() {
   return (
-    <section className="container" id="experience">
-      <h1 className="title has-text-centered">Work Experience</h1>
-      <div className="columns is-centered">
-        <div className="timeline column is-half">
-          {renderItems(content)}
-          <div className="timeline-item"></div>
+    <section className="container">
+      <Element name="experience">
+        <h1 className="title has-text-centered">Work Experience</h1>
+        <div className="columns is-centered">
+          <div className="timeline column is-half">
+            {renderItems(content)}
+            <div className="timeline-item"></div>
+          </div>
         </div>
-      </div>
+      </Element>
     </section>
   )
 }

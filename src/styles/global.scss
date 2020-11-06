@@ -11,6 +11,10 @@ $success: $card-color;
 $success-invert: $text-color;
 $timeline-line-color: $orange;
 $timeline-marker-color: $orange;
+$navbar-background-color: $background-color;
+$navbar-item-hover-background-color: darken($background-color, 10%);
+$navbar-item-hover-color: $text-color;
+$card-content-background-color: $card-color;
 
 @import "~bulma/bulma.sass";
 @import "~bulma-timeline/dist/css/bulma-timeline.sass";
@@ -25,6 +29,24 @@ body {
   .title,
   .subtitle {
     color: $text-color;
+  }
+}
+
+.backToTop {
+  z-index: 10;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: $orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  line-height: 50px;
+  svg {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
   }
 }
 
@@ -55,6 +77,11 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+  color: $text-color;
+
+  img {
+    width: 100%;
+  }
 }
 
 footer {
