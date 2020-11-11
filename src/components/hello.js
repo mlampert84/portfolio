@@ -11,7 +11,7 @@ function makeIntroText(text) {
 
 export default function Hello() {
   return (
-    <section className="container my-6">
+    <section className="container">
       <div className="columns">
         <div className="column is-two-thirds">
           <h2 className="subtitle is-size-4">

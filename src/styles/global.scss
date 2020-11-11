@@ -15,6 +15,7 @@ $navbar-background-color: $background-color;
 $navbar-item-hover-background-color: darken($background-color, 10%);
 $navbar-item-hover-color: $text-color;
 $card-content-background-color: $card-color;
+$card-content-padding: 0.5rem 1rem 1.5rem 1rem;
 
 @import "~bulma/bulma.sass";
 @import "~bulma-timeline/dist/css/bulma-timeline.sass";
@@ -30,6 +31,10 @@ body {
   .subtitle {
     color: $text-color;
   }
+}
+
+section {
+  padding: 50px 0px;
 }
 
 .backToTop {
@@ -82,11 +87,23 @@ body {
   img {
     width: 100%;
   }
+
+  .center-image {
+    background-color: $card-color;
+    padding: 15px 15px 0px 15px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer {
   background-color: $yellow;
-  padding: 30px 0px 30px 0px;
+  a {
+    color: $text-color;
+  }
+  padding: 50px 0px 20px 0px;
 }
 
 .icon-size {
