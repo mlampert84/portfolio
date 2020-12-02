@@ -4,7 +4,7 @@ const content = [
     type: "position",
     institution: "PwC Germany",
     date: "October 2020",
-    event: "Promoted to Senior Associate.",
+    event: "Promoted to Senior Associate Software Engineer",
     description: ["Backend Development in an agile team."],
     skills: [],
   },
@@ -13,7 +13,7 @@ const content = [
     type: "position",
     institution: "PwC Germany",
     date: "June 2018",
-    event: "Hired as an Associate",
+    event: "Hired as an Associate Software Engineer",
     description: ["Frontend and Backend development in an agile team."],
     skills: ["javascript", "vuejs", "java", "git", "docker", "selenium"],
   },
@@ -22,7 +22,7 @@ const content = [
     type: "position",
     institution: "University of Chicago IT Services",
     date: "October 2016",
-    event: "Part time hire as a Academic Technology Solutions Assistant",
+    event: "Hired as an Academic Technology Solutions Assistant",
     description: [
       "Develop features for the university LMS (Learning Management System).",
       "Help university instructors with using LMS.",
@@ -34,9 +34,9 @@ const content = [
     type: "position",
     institution: "University of Chicago",
     date: "September 2010",
-    event: "Begin teaching German language and literature classes.",
+    event: "Begin teaching German language and literature",
     description: [
-      "Graduate, and later post-doctoral instructor for German language and literature",
+      "Graduate, and later post-doctoral instructor for German language and literature.",
     ],
     skills: [
       "listening to students",

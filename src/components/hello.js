@@ -13,7 +13,7 @@ export default function Hello() {
   return (
     <section className="container">
       <div className="columns">
-        <div className="column is-two-thirds">
+        <div className="column is-two-thirds ml-2">
           <h2 className="subtitle is-size-4">
             Hello, I'm Marcus. Welcome to my site!
           </h2>

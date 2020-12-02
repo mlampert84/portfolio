@@ -56,7 +56,7 @@ export default function Navbar() {
                 <Link
                   className="navbar-item"
                   to={i.name}
-                  offset={-50}
+                  offset={-200}
                   duration={500}
                   smooth={true}
                   key={i.name}

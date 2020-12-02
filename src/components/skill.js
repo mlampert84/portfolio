@@ -32,7 +32,7 @@ const renderContentRest = content => {
 export default function Skill({ content }) {
   return (
     <div className="column">
-      <div className="card skill-card">
+      <div className={"card skill-card " + content.color}>
         <div className="card-content">
           <div className="content">
             <h1 className="has-text-centered">{content.title}</h1>
