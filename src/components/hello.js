@@ -3,9 +3,9 @@ import introduction from "../data/introduction-text"
 
 function makeIntroText(text) {
   return text.map(t => (
-    <p className="is-size-5 my-2" key={t}>
+    <li className="is-size-5 my-2" key={t}>
       {t}
-    </p>
+    </li>
   ))
 }
 
@@ -15,9 +15,11 @@ export default function Hello() {
       <div className="columns">
         <div className="column is-two-thirds ml-2">
           <h2 className="subtitle is-size-4">
-            Hello, I'm Marcus. Welcome to my site!
+            Welcome to my site! Here is me in {introduction.length} theses:
           </h2>
-          {makeIntroText(introduction)}
+          <ol class="ml-4">
+            {makeIntroText(introduction)}
+          </ol>
         </div>
       </div>
     </section>

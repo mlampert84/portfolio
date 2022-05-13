@@ -1,5 +1,5 @@
 import React from "react"
-import projectsText from "../data/projects"
+import { professionalProjects, personalProjects } from "../data/projects"
 import { Element } from "react-scroll"
 
 function renderTags(tags) {
@@ -28,7 +28,7 @@ function renderProject(p) {
 
         <div className="card-content content">
           <h2>{p.title}</h2>
-          <p>{p.description}</p>
+          <p dangerouslySetInnerHTML={{ __html: p.description }} />
           {renderTags(p.technology)}
         </div>
       </div>
@@ -40,9 +40,14 @@ export default function Projects() {
   return (
     <section className="container">
       <Element name="projects">
-        <h1 className="title has-text-centered pb-6">Personal Projects</h1>
+        <h1 className="title has-text-centered">Professional Projects</h1>
 
-        <div className="columns">{projectsText.map(p => renderProject(p))}</div>
+        <div className="columns pb-6">{professionalProjects.map(p => renderProject(p))}</div>
+      </Element>
+      <Element name="projects">
+        <h1 className="title has-text-centered">Personal Projects</h1>
+        <h2 className="subtitle has-text-centered">Just me messing around :-)</h2>
+        <div className="columns">{personalProjects.map(p => renderProject(p))}</div>
       </Element>
     </section>
   )

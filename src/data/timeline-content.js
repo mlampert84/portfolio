@@ -2,6 +2,15 @@ const content = [
   { type: "year", year: "Present" },
   {
     type: "position",
+    institution: "Berlin-Brandenburg Academy of Sciences and Humanities",
+    date: "May 2021",
+    event: "Hired as a software engineer for academic research projects",
+    description: ["Web Developer"],
+    skills: ["Laravel","Vue", "Typescript", "Docker"],
+  },
+  { type: "year", year: "2021" },
+  {
+    type: "position",
     institution: "PwC Germany",
     date: "October 2020",
     event: "Promoted to Senior Associate Software Engineer",
