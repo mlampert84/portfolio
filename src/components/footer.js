@@ -39,7 +39,7 @@ export default function Footer() {
             ))}
           </p>
 
-          <p>&#169; Marcus Lampert 2022</p>
+          <p>&#169; Marcus Lampert 2024</p>
         </div>
       </Element>
     </footer>
