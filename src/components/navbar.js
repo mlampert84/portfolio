@@ -16,7 +16,7 @@ const navItems = [
   },
   {
     name: "contact",
-    displayName: "Contact",
+    displayName: "Contact/Impressum",
   },
 ]
 
