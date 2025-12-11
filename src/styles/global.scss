@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+
 $background-color: #ffffff;
 $text-color: #000000;
 $blue: #3f99e4;
@@ -20,7 +21,7 @@ $success-invert: black;
 $timeline-line-color: $red;
 $timeline-marker-color: $red;
 $navbar-background-color: $background-color;
-$navbar-item-hover-background-color: darken($background-color, 10%);
+// $navbar-item-hover-background-color: color.adjust($background-color, $lightness: -10%);
 $navbar-item-hover-color: $text-color;
 // $card-content-background-color: $card-color;
 $card-content-padding: 0.5rem 1rem 1.5rem 1rem;

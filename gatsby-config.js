@@ -5,10 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -16,8 +18,8 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `standalone`,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/favicon.png`, // Ensure this exists
       },
     },
   ],
-}
+};
