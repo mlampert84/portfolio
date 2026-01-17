@@ -1,37 +1,33 @@
 @charset "utf-8";
+
+// Import Bulma (using standard import)
+@import "bulma/css/bulma.css";
+
+// Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-
+// Custom color variables
 $background-color: #ffffff;
 $text-color: #000000;
 $blue: #3f99e4;
 $card-color: $blue;
 $orange: #c71414;
-// $red: #da919e;
 $red: #f16780;
 $yellow: #fb9d38;
 
-$title-weight: 600;
-$subtitle-line-height: 1.5;
-$primary: $red;
-$primary-invert: black;
-$success: $card-color;
-$success-invert: black;
-$timeline-line-color: $red;
-$timeline-marker-color: $red;
-$navbar-background-color: $background-color;
-// $navbar-item-hover-background-color: color.adjust($background-color, $lightness: -10%);
-$navbar-item-hover-color: $text-color;
-// $card-content-background-color: $card-color;
-$card-content-padding: 0.5rem 1rem 1.5rem 1rem;
-
-@import "~bulma/bulma.sass";
-@import "~bulma-timeline/dist/css/bulma-timeline.sass";
+// Override Bulma CSS variables
+:root {
+  --bulma-primary: #{$red};
+  --bulma-primary-h: 352;
+  --bulma-primary-s: 83%;
+  --bulma-primary-l: 73%;
+  --bulma-link: #{$blue};
+  --bulma-success: #{$blue};
+}
 
 html {
   background-color: $background-color;
-  // background-image: linear-gradient(to right, #e9a837, #f4f3e9);
 }
 
 body {
@@ -78,23 +74,72 @@ section {
 
 .skill-card {
   height: 550px;
-  // background-color: $card-color;
   color: $text-color;
   padding-top: 20px;
 }
 
-.timeline-content {
-  .event {
-    font-size: 1.25rem;
-    font-weight: bold;
+// Custom timeline styles (replacing bulma-timeline)
+// Center point at 16px, marker 12px, line 2px
+.timeline {
+  position: relative;
+  padding-left: 0 !important; // Override Bulma column padding
+  margin-left: 3rem; // Add space on left for mobile
+
+  // Single continuous vertical line - centered at 16px
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px; // 16 - 1 (half of 2px line)
+    width: 2px;
+    background-color: $red;
   }
 
-  .institution {
-    font-style: italic;
-    font-weight: bold;
+  .timeline-header {
+    position: relative;
+    z-index: 1;
+    margin: 1rem 0;
+    padding-left: 40px;
+
+    .tag {
+      // Center tag at 16px
+      margin-left: -24px;
+      transform: translateX(-50%);
+    }
   }
-  .date {
-    font-size: 1.25rem;
+
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 1rem;
+
+    .timeline-marker {
+      position: absolute;
+      left: 10px; // 16 - 6 (half of 12px marker)
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $red;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      .date {
+        font-size: 1.25rem;
+      }
+
+      .event {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      .institution {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
   }
 }
 

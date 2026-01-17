@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import { Helmet } from "react-helmet"
 import { animateScroll } from "react-scroll"
 import { FaChevronUp } from "react-icons/fa"
 import Navbar from "../components/navbar"
@@ -48,12 +47,7 @@ export default function Home() {
   })
 
   return (
-    <React.Fragment>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Marcus Lampert</title>
-        <html lang="en" />
-      </Helmet>
+    <>
       <BackToTop display={showToTop} />
       <Navbar />
       <Banner />
@@ -62,6 +56,17 @@ export default function Home() {
       <Timeline />
       <Projects />
       <Footer />
-    </React.Fragment>
+    </>
+  )
+}
+
+export function Head() {
+  return (
+    <>
+      <html lang="en" />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <title>Marcus Lampert</title>
+    </>
   )
 }
