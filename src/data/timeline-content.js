@@ -41,7 +41,7 @@ const content = [
     date: "December 2015",
     event: "Received my PhD in German Literature",
     description: [
-      "The (humble and transparent) title of the dissertation: <i>Infinite Mind: Morality, Self-Expression, and Imagination in German Idealist Thought</i>"
+      "The (grandious and opaque) title of the dissertation: <i>Infinite Mind: Morality, Self-Expression, and Imagination in German Idealist Thought</i>"
     ],
   },
   { type: "year", year: "2015" },

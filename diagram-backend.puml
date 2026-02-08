@@ -1,0 +1,11 @@
+@startuml
+component "ediarum.backend" as Backend
+
+database "XML Corpus" as XML
+database "SQL Database" as SQL
+component "Full-Text Search\nEngine" as Search
+
+XML -up-> Backend : reads
+Backend -down-> SQL : maps data
+Backend -down-> Search : indexes content
+@enduml

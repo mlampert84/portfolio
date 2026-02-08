@@ -1,8 +1,41 @@
 import Satzanalysator from "../images/satz-analysator-2.png"
-import MusicalMemory from "../images/musical-memory.png"
 import Proprietary from "../images/Proprietary.png"
 import CorpusCoranicum from "../images/CorpusCoranicum.png"
+import EdiarumWebdav from "../images/ediarum-webdav.png"
+import EdiarumBackend from "../images/ediarum-backend.png"
+import KishibEditor from "../images/kishib.png"
+
 const professionalProjects = [
+  {
+    title: "Ediarum Webdav",
+    description:
+      "I developed <a href='https://corpuscoranicum.de' target='_blank'>this site</a> together with a colleague at the BBAW. Our assignment was to update the  existing website for a Quran research project at the BBAW.  That site and codebase had atrophied over the years, so we decided for a complete rewrite. We made a Laravel application that pulled data from the existing MySql Database and functioned as a JSON Rest API. We then built the frontend as a Vue/Typescript SPA that consumed the Rest API.",
+    victories: ["The website we made was so much easier to navigate than the old website, and we received a lot of positive feedback from its users.", "It felt great to support a research project with such international reach."],
+    defeats: ["Choosing an SPA over a standard MVC architecture that would deliver finished Html was, in retrospect, a mistake.  The site is less performant than it could otherwise be, it has proved difficult to archive, and it was tricky to make the site visible to Google.", "The site still narrowly follows the organization and layout of the old website it replaced. We could do so much better, but the research project was, after running for almost 20 years, shut down."],
+    technology: ["Vue", "Typescript", "Laravel", "Tailwind", "XSLT", "Docker", "Nginx"],
+    image: EdiarumWebdav,
+    link: "https://corpuscoranicum.de",
+  },
+  {
+    title: "Kishib Editor",
+    description:
+      "I developed <a href='https://corpuscoranicum.de' target='_blank'>this site</a> together with a colleague at the BBAW. Our assignment was to update the  existing website for a Quran research project at the BBAW.  That site and codebase had atrophied over the years, so we decided for a complete rewrite. We made a Laravel application that pulled data from the existing MySql Database and functioned as a JSON Rest API. We then built the frontend as a Vue/Typescript SPA that consumed the Rest API.",
+    victories: ["The website we made was so much easier to navigate than the old website, and we received a lot of positive feedback from its users.", "It felt great to support a research project with such international reach."],
+    defeats: ["Choosing an SPA over a standard MVC architecture that would deliver finished Html was, in retrospect, a mistake.  The site is less performant than it could otherwise be, it has proved difficult to archive, and it was tricky to make the site visible to Google.", "The site still narrowly follows the organization and layout of the old website it replaced. We could do so much better, but the research project was, after running for almost 20 years, shut down."],
+    technology: ["Vue", "Typescript", "Laravel", "Tailwind", "XSLT", "Docker", "Nginx"],
+    image: KishibEditor,
+    link: "https://www.bbaw.de/forschung/kisib-digital-corpus-of-ancient-west-asian-seals-and-sealings",
+  },
+  {
+    title: "Ediarum Backend",
+    description:
+      "I developed <a href='https://corpuscoranicum.de' target='_blank'>this site</a> together with a colleague at the BBAW. Our assignment was to update the  existing website for a Quran research project at the BBAW.  That site and codebase had atrophied over the years, so we decided for a complete rewrite. We made a Laravel application that pulled data from the existing MySql Database and functioned as a JSON Rest API. We then built the frontend as a Vue/Typescript SPA that consumed the Rest API.",
+    victories: ["The website we made was so much easier to navigate than the old website, and we received a lot of positive feedback from its users.", "It felt great to support a research project with such international reach."],
+    defeats: ["Choosing an SPA over a standard MVC architecture that would deliver finished Html was, in retrospect, a mistake.  The site is less performant than it could otherwise be, it has proved difficult to archive, and it was tricky to make the site visible to Google.", "The site still narrowly follows the organization and layout of the old website it replaced. We could do so much better, but the research project was, after running for almost 20 years, shut down."],
+    technology: ["Vue", "Typescript", "Laravel", "Tailwind", "XSLT", "Docker", "Nginx"],
+    image: EdiarumBackend,
+    link: "https://corpuscoranicum.de",
+  },
   {
     title: "Corpus Coranicum",
     description:
@@ -23,8 +56,6 @@ const professionalProjects = [
     image: Proprietary,
     link: "https://www.pwc.de/de/im-fokus/digitale-abschlusspruefung/unsere-tools.html",
   },
-]
-const personalProjects = [
   {
     title: "Satzanalysator",
     description:
@@ -35,16 +66,6 @@ const personalProjects = [
     image: Satzanalysator,
     link: "https://satzanalysator.com/",
   },
-  {
-    title: "Musical Memory",
-    description:
-      "The game Memory, but instead of matching pictures, the players match snippets of music.",
-    victories: ["Placeholder victory 1", "Placeholder victory 2"],
-    defeats: ["Placeholder defeat 1", "Placeholder defeat 2"],
-    technology: ["elm", "webpack"],
-    image: MusicalMemory,
-    link: "https://github.com/mlampert84/musical_memory",
-  },
 ]
 
-export { personalProjects, professionalProjects } 
+export { professionalProjects } 
