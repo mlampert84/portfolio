@@ -4,9 +4,8 @@ const content = [
     type: "position",
     institution: "Berlin-Brandenburg Academy of Sciences and Humanities",
     date: "May 2021",
-    event: "Hired as a software engineer for academic research projects",
-    description: ["Web Developer"],
-    skills: ["Laravel","Vue", "Typescript", "Docker"],
+    event: "Hired as a research software engineer",
+    description: ["Wissenschaftliche Mitarbeiter (Research Associate), responsible for providing technical infrastructure for diverse research projcets"],
   },
   { type: "year", year: "2021" },
   {
@@ -14,8 +13,7 @@ const content = [
     institution: "PwC Germany",
     date: "October 2020",
     event: "Promoted to Senior Associate Software Engineer",
-    description: ["Backend Development in an agile team."],
-    skills: [],
+    description: [],
   },
   { type: "year", year: "2020" },
   {
@@ -23,8 +21,7 @@ const content = [
     institution: "PwC Germany",
     date: "June 2018",
     event: "Hired as an Associate Software Engineer",
-    description: ["Frontend and Backend development in an agile team."],
-    skills: ["javascript", "vuejs", "java", "git", "docker", "selenium"],
+    description: ["Frontend and Backend development in a cross-functional agile team."],
   },
   { type: "year", year: "2018" },
   {
@@ -36,24 +33,18 @@ const content = [
       "Develop features for the university LMS (Learning Management System).",
       "Help university instructors with using LMS.",
     ],
-    skills: ["javascript", "jquery", "php", "applescript"],
   },
   { type: "year", year: "2016" },
   {
     type: "position",
     institution: "University of Chicago",
-    date: "September 2010",
-    event: "Begin teaching German language and literature",
+    date: "December 2015",
+    event: "Received my PhD in German Literature",
     description: [
-      "Graduate, and later post-doctoral instructor for German language and literature.",
-    ],
-    skills: [
-      "listening to students",
-      "clearly presenting ideas",
-      "desigining courses",
+      "The (humble and transparent) title of the dissertation: <i>Infinite Mind: Morality, Self-Expression, and Imagination in German Idealist Thought</i>"
     ],
   },
-  { type: "year", year: "2010" },
+  { type: "year", year: "2015" },
 ]
 
 export default content

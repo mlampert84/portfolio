@@ -41,9 +41,9 @@ function renderWorkItem(item) {
         <p className="event">{item.event}</p>
         <p className="institution">{item.institution}</p>
         {item.description.map(d => (
-          <p key={d}>{d}</p>
+          <p key={d} dangerouslySetInnerHTML={{ __html: d }} />
         ))}
-        {renderTags(item.skills)}
+        {/* {renderTags(item.skills)} */}
       </div>
     </div>
   )
