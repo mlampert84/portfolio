@@ -17,7 +17,6 @@ export default function Footer() {
       <Element name="contact">
         <div className="container has-text-centered ">
           <h2>Want to know more? Here is my contact information:</h2>
-          <h2>Impressum</h2>
           <p>Lampert Software Solutions</p>
           <p>Marcus Lampert</p>
           <p>Charlottenstrasse 49, 12247 Berlin</p>
@@ -39,7 +38,7 @@ export default function Footer() {
             ))}
           </p>
 
-          <p>&#169; Marcus Lampert 2024</p>
+          <p>&#169; Marcus Lampert {new Date().getFullYear()}</p>
         </div>
       </Element>
     </footer>

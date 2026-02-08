@@ -52,9 +52,8 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Hello />
-      <Skills />
-      <Timeline />
       <Projects />
+      <Timeline />
       <Footer />
     </>
   )

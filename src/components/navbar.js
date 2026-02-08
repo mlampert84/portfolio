@@ -3,20 +3,16 @@ import { Link } from "react-scroll"
 
 const navItems = [
   {
-    name: "skills",
-    displayName: "Skills",
+    name: "case_studies",
+    displayName: "Case Studies",
   },
   {
-    name: "experience",
-    displayName: "Experience",
-  },
-  {
-    name: "projects",
-    displayName: "Projects",
+    name: "professional_timeline",
+    displayName: "Professional Timeline",
   },
   {
     name: "contact",
-    displayName: "Contact/Impressum",
+    displayName: "Contact & Legal Notice",
   },
 ]
 

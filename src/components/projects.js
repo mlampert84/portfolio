@@ -14,11 +14,27 @@ function renderTags(tags) {
   )
 }
 
-function renderProject(p) {
+function renderList(title, items) {
   return (
-    <div className="column" key={p.description}>
+    <div className="mb-4">
+      <h3 className="subtitle is-5 mb-2">{title}</h3>
+      <ul>
+        {items.map(item => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+const bgColors = ["yellow-background", "blue-background", "red-background"]
+
+function renderProject(p, index) {
+  const bgClass = bgColors[index % bgColors.length]
+  return (
+    <div className="mb-6" key={p.title}>
       <div className="card project-card">
-        <div className="card-image center-image">
+        <div className={`card-image center-image ${bgClass}`}>
           <figure className="image">
             <a href={p.link} target="_blank" rel="noreferrer">
               <img src={p.image} alt="Placeholder yourimage" />
@@ -29,6 +45,9 @@ function renderProject(p) {
         <div className="card-content content">
           <h2>{p.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: p.description }} />
+          {renderList("Victories", p.victories)}
+          {renderList("Defeats", p.defeats)}
+          <h3 className="subtitle is-5 mb-2">Technologies</h3>
           {renderTags(p.technology)}
         </div>
       </div>
@@ -39,15 +58,9 @@ function renderProject(p) {
 export default function Projects() {
   return (
     <section className="container">
-      <Element name="projects">
-        <h1 className="title has-text-centered">Professional Projects</h1>
-
-        <div className="columns pb-6">{professionalProjects.map(p => renderProject(p))}</div>
-      </Element>
-      <Element name="projects">
-        <h1 className="title has-text-centered">Personal Projects</h1>
-        <h2 className="subtitle has-text-centered">Just me messing around :-)</h2>
-        <div className="columns">{personalProjects.map(p => renderProject(p))}</div>
+      <Element name="case_studies">
+        <h1 className="title has-text-centered">Case Studies</h1>
+        {professionalProjects.map((p, i) => renderProject(p, i))}
       </Element>
     </section>
   )

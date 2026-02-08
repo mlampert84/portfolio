@@ -15,7 +15,7 @@ function renderTags(tags) {
   return (
     <div className="tags are-small">
       {tags.map(tag => (
-        <span className="tag is-success is-medium" key={tag}>
+        <span className="tag is-info is-medium" key={tag}>
           {tag}
         </span>
       ))}
@@ -61,8 +61,8 @@ function renderItems(items) {
 export default function Timeline() {
   return (
     <section className="container">
-      <Element name="experience">
-        <h1 className="title has-text-centered">Work Experience</h1>
+      <Element name="professional_timeline">
+        <h1 className="title has-text-centered">Professional Timeline</h1>
         <div className="columns is-centered">
           <div className="timeline column is-half">
             {renderItems(content)}
