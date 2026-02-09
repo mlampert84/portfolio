@@ -59,14 +59,14 @@ const professionalProjects = [
     link: "https://www.pwc.de/de/im-fokus/digitale-abschlusspruefung/unsere-tools.html",
   },
   {
-    title: "Satzanalysator",
+    title: "Mark-Us",
     description:
-      "This small frontend application allows teachers and students of German to easily mark the main parts of a sentence. When learning to read in a foreign language, identifying the main parts of speech is half the battle.",
-    victories: ["Placeholder victory 1", "Placeholder victory 2"],
-    defeats: ["Placeholder defeat 1", "Placeholder defeat 2"],
+      "I built this prototype six years ago as a way to demonstrate that I can write SPA's in React and not just Vue. This small frontend application allows teachers and students of German to easily mark the main parts of a sentence.  Since writing this, I have dreamed of building a full-fledged Javascript-based XML editor, since it turns on the same idea, namely: classifying elements of flowing text.  But that would be a very big project, and the folks at Oxygen seem to be doing a great job at that.",
+    victories: [],
+    defeats: [],
     technology: ["react", "typescript"],
     image: Satzanalysator,
-    link: "https://satzanalysator.com/",
+    link: "https://github.com/mlampert84/mark-us",
   },
 ]
 

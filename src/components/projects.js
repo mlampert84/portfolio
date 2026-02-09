@@ -45,8 +45,8 @@ function renderProject(p, index) {
         <div className="card-content content">
           <h2>{p.title}</h2>
           <p dangerouslySetInnerHTML={{ __html: p.description }} />
-          {renderList("Victories", p.victories)}
-          {renderList("Defeats", p.defeats)}
+          {p.victories.length > 0 && renderList("Victories", p.victories)}
+          {p.defeats.length > 0 && renderList("Defeats", p.defeats)}
           <h3 className="subtitle is-5 mb-2">Technologies</h3>
           {renderTags(p.technology)}
         </div>
