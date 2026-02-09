@@ -19,7 +19,7 @@ const skillsText = [
     title: "Infrastructure",
     description:
       "Good tooling and intelligent use of tooling is essential for a good developer experience.",
-    tools: ["Git", "Docker", "End-To-End-Testing (Selenium and Cypresss", "ApiBlueprint"],
+    tools: ["Git", "Docker", "End-To-End-Testing (Selenium and Cypress)", "ApiBlueprint"],
     color: "red-background",
   },
 ]

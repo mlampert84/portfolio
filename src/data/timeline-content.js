@@ -5,7 +5,7 @@ const content = [
     institution: "Berlin-Brandenburg Academy of Sciences and Humanities",
     date: "May 2021",
     event: "Hired as a research software engineer",
-    description: ["Wissenschaftliche Mitarbeiter (Research Associate), responsible for providing technical infrastructure for diverse research projcets"],
+    description: ["Wissenschaftliche Mitarbeiter (Research Associate), responsible for providing technical infrastructure for diverse research projects"],
   },
   { type: "year", year: "2021" },
   {
@@ -41,7 +41,7 @@ const content = [
     date: "December 2015",
     event: "Received my PhD in German Literature",
     description: [
-      "The (grandious and opaque) title of the dissertation: <i>Infinite Mind: Morality, Self-Expression, and Imagination in German Idealist Thought</i>"
+      "The (grandiose and opaque) title of the dissertation: <i>Infinite Mind: Morality, Self-Expression, and Imagination in German Idealist Thought</i>"
     ],
   },
   { type: "year", year: "2015" },
