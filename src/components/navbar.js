@@ -27,20 +27,19 @@ export default function Navbar() {
     <div className="container">
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a
-            role="button"
+          <button
             className={`navbar-burger burger ${
               mobileMenuOpen ? "is-active" : ""
             }`}
             aria-label="menu"
-            aria-expanded="false"
+            aria-expanded={mobileMenuOpen}
             data-target="theNavbar"
             onClick={toggleMenu}
           >
-            <span aria-hidden="true" onClick={toggleMenu}></span>
-            <span aria-hidden="true" onClick={toggleMenu}></span>
-            <span aria-hidden="true" onClick={toggleMenu}></span>
-          </a>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
         </div>
         <div
           id="theNavbar"

@@ -1,5 +1,5 @@
 import React from "react"
-import { professionalProjects, personalProjects } from "../data/projects"
+import { professionalProjects } from "../data/projects"
 import { Element } from "react-scroll"
 
 function renderTags(tags) {

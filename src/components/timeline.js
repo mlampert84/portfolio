@@ -11,18 +11,6 @@ function renderYear(year) {
   )
 }
 
-function renderTags(tags) {
-  return (
-    <div className="tags are-small">
-      {tags.map(tag => (
-        <span className="tag is-info is-medium" key={tag}>
-          {tag}
-        </span>
-      ))}
-    </div>
-  )
-}
-
 function renderTimeLineFiller(index) {
   return (
     <div className="timeline-item" key={index}>
@@ -43,7 +31,6 @@ function renderWorkItem(item) {
         {item.description.map(d => (
           <p key={d} dangerouslySetInnerHTML={{ __html: d }} />
         ))}
-        {/* {renderTags(item.skills)} */}
       </div>
     </div>
   )

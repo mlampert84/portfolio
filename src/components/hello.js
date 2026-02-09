@@ -1,13 +1,4 @@
 import React from "react"
-import introduction from "../data/introduction-text"
-
-function makeIntroText(text) {
-  return text.map(t => (
-    <li className="is-size-5 my-2" key={t}>
-      {t}
-    </li>
-  ))
-}
 
 const paragraphs = [
   "Hi there, stranger, and thanks for stopping by!",

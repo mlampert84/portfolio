@@ -4,7 +4,6 @@ import { FaChevronUp } from "react-icons/fa"
 import Navbar from "../components/navbar"
 import Banner from "../components/banner"
 import Hello from "../components/hello"
-import Skills from "../components/skills"
 import Timeline from "../components/timeline"
 import Projects from "../components/projects"
 import Footer from "../components/footer"
@@ -12,15 +11,15 @@ import Footer from "../components/footer"
 function BackToTop(props) {
   if (props.display) {
     return (
-      <div
+      <button
         className="backToTop"
         onClick={() => {
           animateScroll.scrollToTop()
-          console.log("Hello")
         }}
+        aria-label="Back to top"
       >
         <FaChevronUp size={25} />
-      </div>
+      </button>
     )
   } else {
     return null
@@ -66,6 +65,7 @@ export function Head() {
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <title>Marcus Lampert</title>
+      <link rel="icon" type="image/png" href="/favicon.ico" />
     </>
   )
 }
