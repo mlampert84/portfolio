@@ -19,9 +19,7 @@ export default function Footer() {
           <h2>Want to know more? Here is my contact information:</h2>
           <p>Lampert Software Solutions</p>
           <p>Marcus Lampert</p>
-          <p>Charlottenstrasse 49, 12247 Berlin</p>
           <p>Email: marcus[DOT]lampert[AT]gmail[DOT]com</p>
-          <p>Telephone: 0176 57875 033</p>
           <p>
             Or visit me on:
             {icons.map(icon => (
